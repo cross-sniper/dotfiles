@@ -10,7 +10,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export EDITOR="micro"
 
 # paths
-PATH="$PATH:~/bin/:~/.emacs.d/bin/"
+export PATH="$PATH:$HOME/bin:$HOME/.emacs.d/bin"
 
 # plugins
 
@@ -65,8 +65,10 @@ zstyle ":fzf-tab:complete:__zoxide_z:*" fzf-preview "ls --color $realpath"
 alias ls="ls --color"
 alias vim="nvim"
 alias zshconf="$EDITOR ~/.zshrc;exec zsh"
+alias cat="bat"
+alias ..="cd .."
+alias edit="$EDITOR"
 
 # dynamic initialization
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
