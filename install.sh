@@ -50,4 +50,8 @@ if [ ! -d "/usr/lib/node_modules/alacritty-themes/" ]; then
     fi
 fi
 
-echo "i3 has a lot more stuff on it, check the .config/i3/config file"
+echo "i3's config needs:"
+files=("alacritty" "dunst" "nitrogen" "picom" "network-manager-applet" "blueman-applet" "xfce4-panel")
+for file in "${files[@]}"; do
+    echo "-  $file"
+done
