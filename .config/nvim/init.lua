@@ -1,4 +1,8 @@
 -- nvim init.lua
+require("keymaps")
+require("keybinds")
+require("plugins")
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -16,8 +20,6 @@ vim.opt.expandtab = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-require("keymaps")
-require("plugins")
 
 tokyonight_style = 'night'
 vim.colorscheme = 'tokyonight'

@@ -20,5 +20,8 @@ end })
 
 -- On-demand loading: loaded when the specified command is executed
 Plug('preservim/nerdtree', { ['on'] = 'NERDTreeToggle' })
+
+-- tokyo night theme
 Plug('ghifarit53/tokyonight-vim')
+
 vim.call('plug#end')
