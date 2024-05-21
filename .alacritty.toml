@@ -1,0 +1,16 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Tokyonight_Night.toml"
+]
+
+[window]
+opacity = 0.9
+blur = true
+
+[font]
+size = 20
+
+  [font.normal]
+  family = "JetBrainsMono Nerd Font"
+
+  [font.bold]
+  family = "JetBrainsMono Nerd Font"

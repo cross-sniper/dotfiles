@@ -5,12 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#vars
+#vars/exports
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export EDITOR="micro"
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza -n --color=always {} | head -200'"
+
 
 # paths
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.emacs.d/bin"
 
 # plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -72,3 +75,5 @@ alias gcg="git config --global"
 # dynamic initialization
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(thefuck --alias)"
+eval "$(thefuck --alias fk)"
