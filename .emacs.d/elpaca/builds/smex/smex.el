@@ -1,1 +1,0 @@
-/home/cross/.emacs.d/elpaca/repos/smex/smex.el

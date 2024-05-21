@@ -1,1 +1,0 @@
-/home/cross/.emacs.d/elpaca/repos/general/.dirs-local.el
