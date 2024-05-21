@@ -10,7 +10,7 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export EDITOR="micro"
 
 # paths
-export PATH="$PATH:$HOME/bin:$HOME/.emacs.d/bin"
+export PATH="$PATH:$HOME/bin"
 
 # plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -67,6 +67,7 @@ alias zshconf="$EDITOR ~/.zshrc;exec zsh"
 alias cat="bat"
 alias ..="cd .."
 alias edit="$EDITOR"
+alias gcg="git config --global"
 
 # dynamic initialization
 eval "$(fzf --zsh)"
