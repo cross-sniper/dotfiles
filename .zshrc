@@ -65,6 +65,7 @@ zstyle ":fzf-tab:complete:__zoxide_z:*" fzf-preview "ls --color $realpath"
 
 # alias
 alias ls="ls --color"
+alias la="ls -a"
 alias vim="nvim"
 alias zshconf="$EDITOR ~/.zshrc;exec zsh"
 alias cat="bat"
