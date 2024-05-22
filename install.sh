@@ -55,3 +55,4 @@ files=("alacritty" "dunst" "nitrogen" "picom" "network-manager-applet" "blueman-
 for file in "${files[@]}"; do
     echo "-  $file"
 done
+echo "also, install nerd fonts"
