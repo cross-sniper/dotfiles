@@ -1,0 +1,58 @@
+menu "Development" folder {
+    prog "IDLE (Python IDE)" - idle
+    prog "Lite XL" - lite-xl
+    prog "Python" - alacritty -e python
+    prog "Sublime Text" - subl
+}
+menu "Editors" folder {
+    prog "Nano" - alacritty -e nano
+}
+menu "Games" folder {
+    menu "Adventure" folder {
+        prog "Sclient" - sclient
+    }
+    menu "Arcade" folder {
+        prog "PacMan" - pacman
+    }
+    prog "osu!lazer" - osu-lazer
+}
+menu "Multimedia" folder {
+    prog "PulseAudio Volume Control" - pavucontrol
+    prog "Qt V4L2 test Utility" - qv4l2
+    prog "Qt V4L2 video capture utility" - qvidcap
+    prog "SimpleScreenRecorder" - simplescreenrecorder --logfile
+}
+menu "Network" folder {
+    prog "Avahi SSH Server Browser" - bssh
+    prog "Avahi VNC Server Browser" - bvnc
+    prog "Thorium Browser" - thorium-browser
+    prog "Thorium Shell" - thorium-shell
+}
+menu "Shells" folder {
+    prog "Alacritty" - alacritty
+    prog "GIT" - alacritty -e git
+}
+menu "System" folder {
+    menu "Settings" folder {
+        menu "GNOME" folder {
+            prog "Advanced Network Configuration" - nm-connection-editor
+            prog "Bluetooth Manager" - blueman-manager
+        }
+        menu "Xfce" folder {
+            prog "Bluetooth Adapters" - blueman-adapters
+        }
+        prog "Customize Look and Feel" - lxappearance
+        prog "Kvantum Manager" - kvantummanager
+        prog "nitrogen" - nitrogen
+        prog "Tint2 Settings" - tint2conf
+    }
+    prog "Avahi Zeroconf Browser" - avahi-discover
+    prog "pstree" - alacritty -e pstree
+    prog "Pstree" - alacritty -e pstree.x11
+    prog "Tint2" - tint2
+    prog "Top" - alacritty -e top
+}
+menu "Utilities" folder {
+    prog "Info" - alacritty -e info
+    prog "picom" - picom
+}
