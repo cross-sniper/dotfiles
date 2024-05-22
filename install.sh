@@ -36,7 +36,7 @@ fi
 installConf .tmux.conf # tmux config
 installConf .config/nvim # neovim config
 installConf .config/i3 # i3 config
-
+installConf .config/micro # micro editor, config
 # Check for alacritty-themes
 if [ ! -d "/usr/lib/node_modules/alacritty-themes/" ]; then
     echo "You might need to install \"alacritty-themes\""
