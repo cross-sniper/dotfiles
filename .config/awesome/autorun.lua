@@ -5,6 +5,7 @@ autorunApps =
 {
    "alacritty",
    "nitrogen --restore",
+   "nm-applet"
 
 }
 if autorun then
