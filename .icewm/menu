@@ -1,11 +1,17 @@
 menu "Development" folder {
+    prog "CMake" - cmake-gui
+    prog "CMake curses GUI (ccmake)" - alacritty -e ccmake
+    prog "Godot Engine" - godot
     prog "IDLE (Python IDE)" - idle
     prog "Lite XL" - lite-xl
     prog "Python" - alacritty -e python
     prog "Sublime Text" - subl
 }
 menu "Editors" folder {
+    prog "AA Fire" - alacritty -e aafire -driver slang
+    prog "Mousepad" - mousepad
     prog "Nano" - alacritty -e nano
+    prog "Neovim" - alacritty -e nvim
 }
 menu "Games" folder {
     menu "Adventure" folder {
@@ -14,13 +20,23 @@ menu "Games" folder {
     menu "Arcade" folder {
         prog "PacMan" - pacman
     }
+    prog "Configure Vinegar" - alacritty -e vinegar edit
+    prog "Minecraft Bedrock Launcher" - mcpelauncher-ui-qt
     prog "osu!lazer" - osu-lazer
+    prog "Roblox App" - vinegar player run -app
+    prog "Roblox Studio" - vinegar studio run
+}
+menu "Graphics" folder {
+    prog "Flameshot" - flameshot
+    prog "Ristretto Image Viewer" - ristretto
 }
 menu "Multimedia" folder {
+    prog "Parole Media Player" - parole
     prog "PulseAudio Volume Control" - pavucontrol
     prog "Qt V4L2 test Utility" - qv4l2
     prog "Qt V4L2 video capture utility" - qvidcap
     prog "SimpleScreenRecorder" - simplescreenrecorder --logfile
+    prog "Xfburn" - xfburn
 }
 menu "Network" folder {
     prog "Avahi SSH Server Browser" - bssh
@@ -28,9 +44,13 @@ menu "Network" folder {
     prog "Thorium Browser" - thorium-browser
     prog "Thorium Shell" - thorium-shell
 }
+menu "Office" folder {
+    prog "Dictionary" - xfce4-dict
+}
 menu "Shells" folder {
     prog "Alacritty" - alacritty
     prog "GIT" - alacritty -e git
+    prog "Thunar File Manager" - thunar
 }
 menu "System" folder {
     menu "Settings" folder {
@@ -40,19 +60,37 @@ menu "System" folder {
         }
         menu "Xfce" folder {
             prog "Bluetooth Adapters" - blueman-adapters
+            prog "Panel Profiles" - xfce4-panel-profiles
         }
+        prog "Clipboard Manager Settings" - xfce4-clipman-settings
         prog "Customize Look and Feel" - lxappearance
+        prog "File Manager Settings" - thunar-settings
         prog "Kvantum Manager" - kvantummanager
         prog "nitrogen" - nitrogen
+        prog "Notifications" - xfce4-notifyd-config
+        prog "Panel" - xfce4-panel --preferences
+        prog "Removable Drives and Media" - thunar-volman-settings
+        prog "Text Editor Settings" - mousepad --preferences
         prog "Tint2 Settings" - tint2conf
+        prog "Xfce Screensaver" - xfce4-screensaver-preferences
     }
     prog "Avahi Zeroconf Browser" - avahi-discover
+    prog "Hardware Locality lstopo" - lstopo
     prog "pstree" - alacritty -e pstree
     prog "Pstree" - alacritty -e pstree.x11
+    prog "Sensor Viewer" - xfce4-sensors
+    prog "Task Manager" - xfce4-taskmanager
     prog "Tint2" - tint2
     prog "Top" - alacritty -e top
 }
 menu "Utilities" folder {
+    prog "About Xfce" - xfce4-about
+    prog "Ark" - ark
+    prog "Catfish File Search" - catfish
+    prog "Clipboard Manager" - xfce4-clipman
     prog "Info" - alacritty -e info
+    prog "Notes" - xfce4-notes
     prog "picom" - picom
+    prog "Screenshot" - xfce4-screenshooter
+    prog "Winetricks" - winetricks --gui
 }

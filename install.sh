@@ -36,6 +36,7 @@ fi
 installConf .tmux.conf # tmux config
 installConf .config/nvim # neovim config
 installConf .config/i3 # i3 config
+installConf .config/awesome # awesome config
 installConf .icewm # icewm config
 installConf .config/micro # micro editor, config
 # Check for alacritty-themes
