@@ -5,7 +5,7 @@ vim.call('plug#begin')
 
 -- Using a non-default branch
 Plug('neoclide/coc.nvim', { ['branch'] = 'release' , ['do']="npm ci" })
-
+Plug('zaldih/themery.nvim')
 -- Use 'dir' option to install plugin in a non-default directory
 Plug('junegunn/fzf', { ['dir'] = '~/.fzf' })
 
@@ -25,3 +25,10 @@ Plug('preservim/nerdtree', { ['on'] = 'NERDTreeToggle' })
 Plug('ghifarit53/tokyonight-vim')
 
 vim.call('plug#end')
+
+-- Minimal config
+require("themery").setup({
+  themes = {"tokyonight"}, -- Your list of installed colorschemes
+  themeConfigFile = "~/.config/nvim/lua/theme.lua", -- Described below
+  livePreview = true, -- Apply theme while browsing. Default to true.
+})
