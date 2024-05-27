@@ -63,6 +63,11 @@ zstyle ":completion:*" menu no
 zstyle ":fzf-tab:complete:cd:*" fzf-preview "ls --color $realpath"
 zstyle ":fzf-tab:complete:__zoxide_z:*" fzf-preview "ls --color $realpath"
 
+# functions
+kitty-reload() {
+    kill -SIGUSR1 $(pidof kitty)
+}
+
 # alias
 alias ls="ls --color"
 alias la="ls -a"

@@ -20,7 +20,8 @@ installConf() {
 
 # Install configuration files
 installConf .zshrc # zsh config
-installConf .alacritty.toml # alacritty config
+installConf .alacritty.toml # alacritty terminal config
+installConf .config/kitty # kitty terminal config
 
 # Install tmux plugin manager
 if [ ! -d ~/.tmux/plugins/tpm ]; then
@@ -39,7 +40,9 @@ installConf .config/i3 # i3 config
 installConf .config/awesome # awesome config
 installConf .icewm # icewm config
 installConf .config/micro # micro editor, config
+installConf .p10k.zsh # powerlevel 10k
 # Check for alacritty-themes
+
 if [ ! -d "/usr/lib/node_modules/alacritty-themes/" ]; then
     echo "You might need to install \"alacritty-themes\""
     echo "Opening https://github.com/rajasegar/alacritty-themes"
