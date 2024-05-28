@@ -77,6 +77,7 @@ alias cat="bat"
 alias ..="cd .."
 alias edit="$EDITOR"
 alias gcg="git config --global"
+alias gas="ga .; gss" # git add .; git status --short
 
 # dynamic initialization
 eval "$(fzf --zsh)"
