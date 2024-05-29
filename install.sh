@@ -22,6 +22,7 @@ installConf() {
 installConf .zshrc # zsh config
 installConf .alacritty.toml # alacritty terminal config
 installConf .config/kitty # kitty terminal config
+installConf .config/nushell # nushell config
 
 # Install tmux plugin manager
 if [ ! -d ~/.tmux/plugins/tpm ]; then
@@ -37,6 +38,7 @@ fi
 installConf .tmux.conf # tmux config
 installConf .config/nvim # neovim config
 installConf .config/i3 # i3 config
+installConf .config/hypr # hyprland config
 installConf .config/awesome # awesome config
 installConf .icewm # icewm config
 installConf .config/micro # micro editor, config
