@@ -3,9 +3,13 @@ awful = require("awful")
 autorun = true
 autorunApps =
 {
-   "alacritty",
-   "nitrogen --restore",
-   "nm-applet"
+	"xfce4-panel",
+	"blueman-applet",
+	"nm-applet",
+	"nitrogen --restore",
+	"picom",
+	"dunst",
+	"alacritty"
 
 }
 if autorun then

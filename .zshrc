@@ -69,7 +69,7 @@ kitty-reload() {
 }
 
 # alias
-alias ls="ls --color"
+alias ls="exa -l"
 alias la="ls -a"
 alias vim="nvim"
 alias zshconf="$EDITOR ~/.zshrc;exec zsh"
