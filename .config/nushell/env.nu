@@ -87,8 +87,9 @@ $env.NU_PLUGIN_DIRS = [
 use std "path add"
 path add "~/bin"
 $env.EDITOR = "micro"
-export BUN_INSTALL "$HOME/.bun"
-path add $BUN_INSTALL
+$env.BUN_INSTAL = "$HOME/.bun"
+path add ".bun/bin"
+
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 # An alternate way to add entries to $env.PATH is to use the custom command `path add`

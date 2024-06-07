@@ -43,6 +43,7 @@ installConf .config/hypr # hyprland config
 installConf .config/niri # niri wm config
 installConf .config/awesome # awesome config
 installConf .icewm # icewm config
+installConf .emacs.d # emacs config
 installConf .config/micro # micro editor, config
 installConf .p10k.zsh # powerlevel 10k
 # Check for alacritty-themes

@@ -68,6 +68,21 @@ kitty-reload() {
     kill -SIGUSR1 $(pidof kitty)
 }
 
+original() {
+  if [ $# -eq 0 ]; then
+    echo "Usage: original <command> [arguments]"
+    return 1
+  fi
+  
+  # Extract the command and its arguments
+  local cmd=$1
+  shift
+  
+  # Use 'command' to bypass aliases and functions
+  command $cmd "$@"
+}
+
+
 # alias
 alias ls="exa -l"
 alias la="ls -a"
@@ -78,7 +93,7 @@ alias ..="cd .."
 alias edit="$EDITOR"
 alias gcg="git config --global"
 alias gas="ga .; gss" # git add .; git status --short
-
+alias emacs="emacsclient"
 # dynamic initialization
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
