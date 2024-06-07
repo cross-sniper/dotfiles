@@ -9,8 +9,8 @@ blur = true
 [font]
 size = 20
 
-  [font.normal]
-  family = "JetBrainsMono Nerd Font"
+#  [font.normal]
+#  family = "JetBrainsMono Nerd Font"
 
-  [font.bold]
-  family = "JetBrainsMono Nerd Font"
+#  [font.bold]
+#  family = "JetBrainsMono Nerd Font"

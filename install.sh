@@ -24,6 +24,7 @@ installConf .alacritty.toml # alacritty terminal config
 installConf .config/kitty # kitty terminal config
 installConf .config/nushell # nushell config
 installConf .config/helix # nushell config
+installConf .config/ohmyposh # oh-my-posh config
 
 # Install tmux plugin manager
 if [ ! -d ~/.tmux/plugins/tpm ]; then
