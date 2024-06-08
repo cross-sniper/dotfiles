@@ -1,18 +1,5 @@
 (require 'package)
-
 ;; TODO: make emacs go to an empty buffer when the last file is closed
-(defun my-switch-to-scratch-buffer ()
-  "Switch to the *scratch* buffer."
-  (switch-to-buffer "*scratch*"))
-
-(defun my-kill-buffer-advice (orig-fun &rest args)
-  "Switch to *scratch* buffer if killing the last file buffer."
-  (let ((buffer-list (buffer-list)))
-    (apply orig-fun args)
-    (when (null (cl-remove-if-not 'buffer-file-name buffer-list))
-      (my-switch-to-scratch-buffer))))
-
-(advice-add 'kill-buffer :around #'my-kill-buffer-advice)
 
 ;; Disable the startup screen
 (setq inhibit-startup-screen t)
@@ -28,7 +15,7 @@
 
 ;; Load the theme
 (load-theme 'monokai t)
-(set-face-attribute 'default nil :font "Monospace-18")
+(set-face-attribute 'default nil :font "Monospace-20")
 
 ;; Set up package.el to work with MELPA
 (add-to-list 'package-archives
@@ -56,6 +43,13 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; Enable evil mode
 (require 'evil)
 (evil-mode 1)
+
+;; Go to *scratch* buffer when the last file is closed
+(defun my/close-buffer-hook ()
+  (when (eq (length (buffer-list)) 2) ; 2 because *scratch* buffer is always there
+    (switch-to-buffer "*scratch*")
+    (message "Switched to *scratch* buffer")))
+
+(add-hook 'kill-buffer-hook 'my/close-buffer-hook)
