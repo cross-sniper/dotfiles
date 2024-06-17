@@ -89,6 +89,7 @@ path add "~/bin"
 $env.EDITOR = "micro"
 $env.BUN_INSTAL = "$HOME/.bun"
 path add ".bun/bin"
+$env.LD_LIBRARY_PATH = "$HOME/libs:$LD_LIBRARY_PATH"
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')

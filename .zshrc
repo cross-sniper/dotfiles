@@ -3,11 +3,15 @@ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export EDITOR="micro"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza -n --color=always {} | head -200'"
-
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.libs"
+export HOMEBREW_AUTO_UPDATE_SECS=500
+export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # paths
-export PATH="$PATH:$HOME/bin:$HOME/.emacs.d/bin"
-
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$PATH:$HOME/bin:$HOME/.config/emacs/bin:~/.local/share/gem/ruby/3.0.0/bin"
+export PATH="/opt/brew/opt/pod2man/bin:$PATH"
+export PATH="/opt/brew/bin:$PATH"
 # plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
@@ -16,6 +20,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 zinit ice depth=1;zinit light zsh-users/zsh-syntax-highlighting
 zinit ice depth=1;zinit light zsh-users/zsh-completions
+zinit ice depth=1;zinit light denysdovhan/spaceship-prompt
+# zinit ice depth=1;zinit light starship/starship
 zinit ice depth=1;zinit light zsh-users/zsh-autosuggestions
 zinit ice depth=1;zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::git
@@ -25,7 +31,7 @@ zinit snippet OMZP::command-not-found
 
 autoload -Uz compinit && compinit
 zinit cdreplay -q
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
 # keybinds
 
 bindkey -e
@@ -60,6 +66,9 @@ kitty-reload() {
 
 original() {
   if [ $# -eq 0 ]; then
+	echo "original:"
+	echo "runs the original command, be it in /usr/bin /bin or in some other folder,"
+	echo "should work with commands defined by zsh and/or bash"
     echo "Usage: original <command> [arguments]"
     return 1
   fi
@@ -71,13 +80,23 @@ original() {
   # Use 'command' to bypass aliases and functions
   command $cmd "$@"
 }
-
+whoowns() {
+  if [ $# -eq 0 ]; then
+    echo "whoowns"
+    echo " shows you who is the owner of a file or folder"
+    echo " e.g: ~/ owner's would be you, $(whoami)"
+    echo "whoowns <file or folder>"
+    return 1
+  fi
+  
+  stat -c '%U' "$1"
+}
 
 # alias
 alias ls="exa -l"
 alias la="ls -a"
-alias vim="nvim"
-alias zshconf="$EDITOR ~/.zshrc;exec zsh"
+
+alias zshconf="$EDITOR ~/.zshrc; echo \"reloaded zsh\";exec zsh"
 alias cat="bat"
 alias ..="cd .."
 alias edit="$EDITOR"
