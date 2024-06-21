@@ -6,6 +6,10 @@ set -x FZF_ALT_C_OPTS "--preview 'eza -n --color=always {} | head -200'"
 set -x LD_LIBRARY_PATH "$LD_LIBRARY_PATH:$HOME/.libs"
 set -x HOMEBREW_AUTO_UPDATE_SECS 500
 set -x HOMEBREW_NO_INSTALL_CLEANUP 1
+set -x FONTCONFIG_PATH "/etc/fonts"
+
+set -x MYVIMRC "~/.vimrc"
+set -x MYNVIMRC "~/.config/nvim/init.lua"
 
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH

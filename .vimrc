@@ -28,7 +28,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'voldikss/vim-floaterm'
 Plug 'ghifarit53/tokyonight-vim'
-
+Plug 'habamax/vim-godot'
 call plug#end()
 
 " Set leader key

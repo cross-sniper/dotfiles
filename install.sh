@@ -51,3 +51,40 @@ if ! command_exists stow; then
 else
     stow .
 fi
+echo "installing vim plug"
+
+
+# Install tmux plugin manager
+if [ ! -d ~/.vim/autoload/plug.vim ]; then
+    if command_exists curl; then
+        if curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ; then
+            echo "vim (plug)in manager installed successfully"
+        else
+            echo "Failed to install vim (plug)in manager"
+        fi
+    else
+        echo "curl is not installed. Please install git to continue."
+        exit 1
+    fi
+else
+    echo "tmux plugin manager already installed"
+fi
+
+
+# Auto install Vim plugins
+if command_exists vim; then
+    vim +PlugInstall +qall
+    echo "Vim plugins installed successfully"
+else
+    echo "vim is not installed. Please install vim to continue."
+    exit 1
+fi
+
+# Ensure Neovim is installed and set up NvChad
+if command_exists nvim; then
+    nvim +qall
+    echo "Neovim (NvChad) setup completed"
+else
+    echo "nvim is not installed. Please install Neovim to continue."
+    exit 1
+fi

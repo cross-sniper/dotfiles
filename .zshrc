@@ -6,6 +6,8 @@ export FZF_ALT_C_OPTS="--preview 'eza -n --color=always {} | head -200'"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.libs"
 export HOMEBREW_AUTO_UPDATE_SECS=500
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+export MYVIMRC="~/.vimrc"
+export MYNVIMRC="~/.config/nvim/init.lua"
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
