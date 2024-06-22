@@ -54,8 +54,8 @@ fi
 echo "installing vim plug"
 
 
-# Install tmux plugin manager
-if [ ! -d ~/.vim/autoload/plug.vim ]; then
+# Install vim plugin manager
+if [ ! -f~/.vim/autoload/plug.vim ]; then
     if command_exists curl; then
         if curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ; then
             echo "vim (plug)in manager installed successfully"
@@ -82,7 +82,7 @@ fi
 
 # Ensure Neovim is installed and set up NvChad
 if command_exists nvim; then
-    nvim +qall
+    nvim +MasonInstall +"Lazy install" +qall
     echo "Neovim (NvChad) setup completed"
 else
     echo "nvim is not installed. Please install Neovim to continue."
