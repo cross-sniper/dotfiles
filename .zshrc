@@ -8,6 +8,7 @@ export HOMEBREW_AUTO_UPDATE_SECS=500
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export MYVIMRC="~/.vimrc"
 export MYNVIMRC="~/.config/nvim/init.lua"
+export TWEEGO_PATH="~/.storyformats"
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -105,6 +106,8 @@ alias edit="$EDITOR"
 alias gcg="git config --global"
 alias gas="ga .; gss" # git add .; git status --short
 alias emacs="emacsclient"
+alias ncm="ncmpcpp"
+alias tree = "tree -C"
 # dynamic initialization
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"

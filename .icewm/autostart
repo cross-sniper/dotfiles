@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+tint2&
+blueman-applet&
+nm-applet&
+nitrogen --restore&
+picom&
+dunst&
+alacritty&
+/usr/bin/emacs --daemon&

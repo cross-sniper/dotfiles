@@ -18,7 +18,6 @@ set cursorline
 
 " Initialize plugin system
 call plug#begin('~/.vim/plugged')
-
 " List your plugins here
 Plug 'junegunn/fzf.vim', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', { 'do': 'npm ci' }
@@ -29,6 +28,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'voldikss/vim-floaterm'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'habamax/vim-godot'
+Plug 'whleucka/melody.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'folke/lazy.nvim'
 call plug#end()
 
 " Set leader key
@@ -39,6 +42,8 @@ nmap <leader>ff :FZF<CR>
 nmap <leader><leader>f :Files<CR>
 nmap <leader><leader>c :NERDCommenterToggle<CR>
 vmap <leader><leader>c :NERDCommenterToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+imap <C-n> :NERDTreeToggle<CR>
 
 " Open terminal in a floating window
 nmap <leader>ft :FloatermNew<CR>

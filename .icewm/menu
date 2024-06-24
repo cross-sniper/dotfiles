@@ -1,96 +1,191 @@
 menu "Development" folder {
     prog "CMake" - cmake-gui
     prog "CMake curses GUI (ccmake)" - alacritty -e ccmake
+    prog "Doxywizard" - doxywizard
+    prog "Electron 28" - electron28
+    prog "Electron 31" - electron31
     prog "Godot Engine" - godot
+    prog "Icon Browser" - yad-icon-browser
     prog "IDLE (Python IDE)" - idle
     prog "Lite XL" - lite-xl
+    prog "Meld" - meld
     prog "Python" - alacritty -e python
+    prog "Qt Assistant" - assistant
+    prog "Qt Designer" - designer
+    prog "Qt Linguist" - linguist
+    prog "Qt QDBusViewer" - qdbusviewer
     prog "Sublime Text" - subl
+    prog "Tclsh8.6" - alacritty -e tclsh8.6
 }
 menu "Editors" folder {
     prog "AA Fire" - alacritty -e aafire -driver slang
+    prog "Emacs" - alacritty -e emacs
+    prog "Helix" - alacritty -e helix
     prog "Mousepad" - mousepad
     prog "Nano" - alacritty -e nano
     prog "Neovim" - alacritty -e nvim
+    prog "Vi" - alacritty -e vi
+    prog "Vim" - alacritty -e vim
 }
 menu "Games" folder {
     menu "Adventure" folder {
+        prog "Cataclysm: Dark Days Ahead" - cataclysm-tiles
         prog "Sclient" - sclient
     }
     menu "Arcade" folder {
         prog "PacMan" - pacman
+        prog "StepMania" - stepmania
+        prog "SuperTuxKart" - supertuxkart
+        prog "Trigger" - /usr/games/trigger-rally
     }
-    prog "Configure Vinegar" - alacritty -e vinegar edit
+    prog "Lutris" - lutris
+    prog "Mindustry" - mindustry
     prog "Minecraft Bedrock Launcher" - mcpelauncher-ui-qt
     prog "osu!lazer" - osu-lazer
-    prog "Roblox App" - vinegar player run -app
-    prog "Roblox Studio" - vinegar studio run
+    prog "osu!stable" - osu-stable
+    prog "TORCS" - torcs
 }
 menu "Graphics" folder {
-    prog "Flameshot" - flameshot
+    prog "Blender" - blender
+    prog "GraphicsMagick" - gm display logo:
+    prog "Inkscape" - inkscape
+    prog "Krita KDE Bitmap Graphics Editor" - krita
+    prog "Pixelorama" - pixelorama
     prog "Ristretto Image Viewer" - ristretto
 }
 menu "Multimedia" folder {
+    prog "ALSA mixer" - alacritty -e alsamixer
+    prog "mpv Media Player" - mpv --player-operation-mode=pseudo-gui
+    prog "ncmpcpp" - alacritty -e ncmpcpp
     prog "Parole Media Player" - parole
     prog "PulseAudio Volume Control" - pavucontrol
     prog "Qt V4L2 test Utility" - qv4l2
     prog "Qt V4L2 video capture utility" - qvidcap
     prog "SimpleScreenRecorder" - simplescreenrecorder --logfile
-    prog "Xfburn" - xfburn
+    prog "VLC media player" - vlc
+    prog "VLC media player" - qvlc
+    prog "XAVA" - xava
 }
 menu "Network" folder {
     prog "Avahi SSH Server Browser" - bssh
     prog "Avahi VNC Server Browser" - bvnc
+    prog "FTP" - alacritty -e ftp
+    prog "Mail" - alacritty -e mail
+    prog "Mail Reader" - exo-open --launch MailReader
+    prog "Talk" - alacritty -e talk
+    prog "Telnet" - alacritty -e telnet
     prog "Thorium Browser" - thorium-browser
     prog "Thorium Shell" - thorium-shell
+    prog "TkVNC" - xterm -e tkvnc
+    prog "Transmission (Qt)" - transmission-qt
+    prog "Web Browser" - exo-open --launch WebBrowser
 }
 menu "Office" folder {
-    prog "Dictionary" - xfce4-dict
+    prog "Obsidian" - obsidian
+}
+menu "Other" folder {
+    prog "Napture" - napture
+}
+menu "Science" folder {
+    prog "bc" - alacritty -e bc
+    prog "dc" - alacritty -e dc
 }
 menu "Shells" folder {
     prog "Alacritty" - alacritty
+    prog "Cool Retro Term" - cool-retro-term
     prog "GIT" - alacritty -e git
+    prog "kitty" - kitty
+    prog "MC" - alacritty -e mc
+    prog "ranger" - alacritty -e ranger
     prog "Thunar File Manager" - thunar
+    prog "UXTerm" - uxterm
+    prog "Xfce Terminal" - xfce4-terminal
+    prog "Xterm" - xterm
 }
 menu "System" folder {
     menu "Settings" folder {
         menu "GNOME" folder {
             prog "Advanced Network Configuration" - nm-connection-editor
             prog "Bluetooth Manager" - blueman-manager
+            prog "XScreenSaver Settings" - xscreensaver-settings
         }
         menu "Xfce" folder {
             prog "Bluetooth Adapters" - blueman-adapters
             prog "Panel Profiles" - xfce4-panel-profiles
+            prog "Settings Manager" - xfce4-settings-manager
         }
-        prog "Clipboard Manager Settings" - xfce4-clipman-settings
+        prog "Accessibility" - xfce4-accessibility-settings
+        prog "Appearance" - xfce4-appearance-settings
+        prog "Color Profiles" - xfce4-color-settings
         prog "Customize Look and Feel" - lxappearance
+        prog "Default Applications" - xfce4-mime-settings
+        prog "Desktop" - xfdesktop-settings
+        prog "Display" - xfce4-display-settings
         prog "File Manager Settings" - thunar-settings
+        prog "Firewall" - firewall-config
+        prog "Keyboard" - xfce4-keyboard-settings
         prog "Kvantum Manager" - kvantummanager
+        prog "Mouse and Touchpad" - xfce4-mouse-settings
         prog "nitrogen" - nitrogen
         prog "Notifications" - xfce4-notifyd-config
         prog "Panel" - xfce4-panel --preferences
+        prog "Power Manager" - xfce4-power-manager-settings
         prog "Removable Drives and Media" - thunar-volman-settings
+        prog "Session and Startup" - xfce4-session-settings
+        prog "Settings Editor" - xfce4-settings-editor
         prog "Text Editor Settings" - mousepad --preferences
         prog "Tint2 Settings" - tint2conf
+        prog "Window Manager" - xfwm4-settings
+        prog "Window Manager Tweaks" - xfwm4-tweaks-settings
+        prog "Workspaces" - xfwm4-workspace-settings
         prog "Xfce Screensaver" - xfce4-screensaver-preferences
+        prog "Xfce Terminal Settings" - xfce4-terminal --preferences
+        prog "XScreenSaver" - xscreensaver
+        prog "YAD settings" - yad-settings
     }
     prog "Avahi Zeroconf Browser" - avahi-discover
+    prog "btop++" - alacritty -e btop
+    prog "Cairo-Dock" - cairo-dock
+    prog "Cairo-Dock (Fallback Mode)" - cairo-dock -A
+    prog "EndeavourOS apps info" - eos-apps-info
+    prog "EndeavourOS log tool" - eos-log-tool
+    prog "EndeavourOS Quickstart Installer" - eos-quickstart
+    prog "fish" - alacritty -e fish
     prog "Hardware Locality lstopo" - lstopo
+    prog "Log Out" - xfce4-session-logout
+    prog "OpenJDK Java 22 Console" - jconsole
+    prog "OpenJDK Java 22 Shell" - alacritty -e jshell
+    prog "pstree" - xterm -e /usr/bin/pstree.x11
     prog "pstree" - alacritty -e pstree
     prog "Pstree" - alacritty -e pstree.x11
-    prog "Sensor Viewer" - xfce4-sensors
+    prog "Reflector Simple" - reflector-simple
+    prog "Software Token" - stoken-gui
+    prog "Software Token (small)" - stoken-gui --small
     prog "Task Manager" - xfce4-taskmanager
     prog "Tint2" - tint2
     prog "Top" - alacritty -e top
+    prog "Welcome" - eos-welcome --once
 }
 menu "Utilities" folder {
     prog "About Xfce" - xfce4-about
+    prog "Activate ScreenSaver (Next)" - xscreensaver-command -next
+    prog "Activate ScreenSaver (Previous)" - xscreensaver-command -prev
+    prog "Activate ScreenSaver (Random)" - xscreensaver-command -activate
+    prog "Application Finder" - xfce4-appfinder
     prog "Ark" - ark
-    prog "Catfish File Search" - catfish
-    prog "Clipboard Manager" - xfce4-clipman
+    prog "Demo Screen Hacks" - xscreensaver-command -demo
+    prog "Disable XScreenSaver" - xscreensaver-command -exit
+    prog "File Manager" - exo-open --launch FileManager
+    prog "File Roller" - file-roller
+    prog "Galculator" - galculator
     prog "Info" - alacritty -e info
-    prog "Notes" - xfce4-notes
+    prog "Lock Screen (XScreenSaver)" - xscreensaver-command -lock
     prog "picom" - picom
+    prog "Reinitialize XScreenSaver" - xscreensaver-command -restart
+    prog "Run Program..." - xfce4-appfinder --collapsed
+    prog "ScreenSaver Preferences" - xscreensaver-command -prefs
     prog "Screenshot" - xfce4-screenshooter
+    prog "Terminal Emulator" - exo-open --launch TerminalEmulator
     prog "Winetricks" - winetricks --gui
+    prog "Xkill" - xkill
 }

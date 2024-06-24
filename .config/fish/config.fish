@@ -10,7 +10,7 @@ set -x FONTCONFIG_PATH "/etc/fonts"
 
 set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
-
+set -x TWEEGO_PATH "~/.storyformats"
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $PATH $HOME/bin $HOME/.config/emacs/bin $HOME/.local/share/gem/ruby/3.0.0/bin
@@ -57,6 +57,8 @@ alias edit="$EDITOR"
 alias gcg="git config --global"
 alias gas="ga .; gss"
 alias emacs="emacsclient"
+alias ncm="ncmpcpp"
+alias tree="tree -C"
 
 # dynamic initialization
 fzf --fish | source
