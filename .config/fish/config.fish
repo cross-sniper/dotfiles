@@ -72,5 +72,9 @@ set -x PATH $BUN_INSTALL/bin $PATH
 
 
 function fish_greeting
+end
 
+# Start X automatically on login
+if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
+    startx
 end

@@ -107,7 +107,8 @@ alias gcg="git config --global"
 alias gas="ga .; gss" # git add .; git status --short
 alias emacs="emacsclient"
 alias ncm="ncmpcpp"
-alias tree = "tree -C"
+alias tree="tree -C"
+
 # dynamic initialization
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"

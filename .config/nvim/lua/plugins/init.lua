@@ -21,11 +21,5 @@ return {
 	{'vim-airline/vim-airline-themes'},
 	{'vim-airline/vim-airline'},
 	{'preservim/nerdcommenter'},
-	{'preservim/nerdtree'},
-	{''},
-    	{
-		"neoclide/coc.nvim",
-		branch = "release"
-	}
-
+	{'preservim/nerdtree'}
 }

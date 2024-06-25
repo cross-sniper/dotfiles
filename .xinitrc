@@ -1,2 +1,6 @@
 #!/usr/bin/env sh
-exec dbus-run-session i3
+# ~/.xinitrc
+# this is runned by startx
+(sleep 1 && ~/.autostart.sh) &
+
+exec dwm
