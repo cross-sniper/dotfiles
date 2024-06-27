@@ -48,11 +48,10 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-# start a terminal
-bindsym $mod+Return exec alacritty
-
-#bindsym $mod+Shift+Return exec $(command -e kitty | cool-retro-term)
-bindsym $mod+Shift+Return exec "/bin/bash -c 'if command -v kitty >/dev/null 2>&1; then kitty; else cool-retro-term; fi'"
+# terminals
+bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Control+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
