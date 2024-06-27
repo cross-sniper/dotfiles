@@ -44,6 +44,3 @@ globals.floaterm_keymap_next = '<F9>'
 globals.floaterm_keymap_kill = '<F10>'
 globals.floaterm_width = 0.8
 globals.floaterm_height = 0.7
-
--- Set colorscheme
-cmd("colorscheme tokyonight")
