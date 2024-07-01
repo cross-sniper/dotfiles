@@ -1,6 +1,6 @@
 {
   "fine-cmdline.nvim": { "branch": "main", "commit": "dd676584145d62b30d7e8dbdd011796a8f0a065f" },
-  "lazy.nvim": { "branch": "main", "commit": "20af3fcc4ef2fef0cb4021543c70410567fcf9aa" },
+  "lazy.nvim": { "branch": "main", "commit": "c882227f1fdc4580d14212df8f814a0772951e3d" },
   "mason.nvim": { "branch": "main", "commit": "0950b15060067f752fde13a779a994f59516ce3d" },
   "neodev.nvim": { "branch": "main", "commit": "02893eeb9d6e8503817bd52385e111cba9a90500" },
   "nerdcommenter": { "branch": "master", "commit": "7bb1f72e802a80e37bdda5f6906c69b5a93de1eb" },

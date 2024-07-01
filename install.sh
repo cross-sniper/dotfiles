@@ -55,7 +55,7 @@ echo "installing vim plug"
 
 
 # Install vim plugin manager
-if [ ! -f~/.vim/autoload/plug.vim ]; then
+if [ ! -f ~/.vim/autoload/plug.vim ]; then
     if command_exists curl; then
         if curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ; then
             echo "vim (plug)in manager installed successfully"

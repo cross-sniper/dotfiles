@@ -1,6 +1,7 @@
 # vars/exports
 set -x GIT_DISCOVERY_ACROSS_FILESYSTEM 1
 set -x EDITOR micro
+set -x BROWSER thorium-browser
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
 set -x FZF_ALT_C_OPTS "--preview 'eza -n --color=always {} | head -200'"
 set -x LD_LIBRARY_PATH "$LD_LIBRARY_PATH:$HOME/.libs"

@@ -1,6 +1,7 @@
 #vars/exports
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export EDITOR="micro"
+export BROWSER="thorium-browser"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza -n --color=always {} | head -200'"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.libs"
