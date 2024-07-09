@@ -53,7 +53,6 @@ else
 fi
 echo "installing vim plug"
 
-
 # Install vim plugin manager
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
     if command_exists curl; then

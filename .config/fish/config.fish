@@ -14,6 +14,7 @@ set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
 set -x TWEEGO_PATH "~/.storyformats"
 set -x RUSTC_WRAPPER "sccache"
+set -x NVIM_APPNAME "nvim-Lazyman"
 
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH

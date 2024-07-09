@@ -11,6 +11,7 @@ export MYVIMRC="~/.vimrc"
 export MYNVIMRC="~/.config/nvim/init.lua"
 export TWEEGO_PATH="~/.storyformats"
 export RUSTC_WRAPPER="sccache"
+export NVIM_APPNAME="nvim-Lazyman"
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -125,3 +126,9 @@ eval "$(thefuck --alias fk)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# Source the Lazyman shell initialization for aliases and nvims selector
+# shellcheck source=.config/nvim-Lazyman/.lazymanrc
+[ -f ~/.config/nvim-Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
+# Source the Lazyman .nvimsbind for nvims key binding
+# shellcheck source=.config/nvim-Lazyman/.nvimsbind
+[ -f ~/.config/nvim-Lazyman/.nvimsbind ] && source ~/.config/nvim-Lazyman/.nvimsbind
