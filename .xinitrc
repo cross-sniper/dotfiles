@@ -3,4 +3,4 @@
 # this is runned by startx
 (sleep 1 && ~/.autostart.sh) &
 
-exec dwm
+exec i3

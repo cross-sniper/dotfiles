@@ -53,5 +53,6 @@ return {
 	  config = function()
 	    require"startup".setup()
 	  end
-	}
+	},
+
 }

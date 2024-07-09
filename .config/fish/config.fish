@@ -8,15 +8,19 @@ set -x LD_LIBRARY_PATH "$LD_LIBRARY_PATH:$HOME/.libs"
 set -x HOMEBREW_AUTO_UPDATE_SECS 500
 set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 set -x FONTCONFIG_PATH "/etc/fonts"
-
+set -x HISTFILE "~/.fish_hist"
+set -x TERM "alacritty"
 set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
 set -x TWEEGO_PATH "~/.storyformats"
+set -x RUSTC_WRAPPER "sccache"
+
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $PATH $HOME/bin $HOME/.config/emacs/bin $HOME/.local/share/gem/ruby/3.0.0/bin
 set -x PATH /opt/brew/opt/pod2man/bin $PATH
 set -x PATH /opt/brew/bin $PATH
+set -x PATH $PATH ~/.local/bin/
 
 # functions
 function kitty-reload

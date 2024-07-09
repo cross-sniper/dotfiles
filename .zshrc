@@ -10,12 +10,15 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1
 export MYVIMRC="~/.vimrc"
 export MYNVIMRC="~/.config/nvim/init.lua"
 export TWEEGO_PATH="~/.storyformats"
+export RUSTC_WRAPPER="sccache"
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:$HOME/bin:$HOME/.config/emacs/bin:~/.local/share/gem/ruby/3.0.0/bin"
 export PATH="/opt/brew/opt/pod2man/bin:$PATH"
 export PATH="/opt/brew/bin:$PATH"
+export PATH=$PATH:~/.local/bin/
+
 # plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"

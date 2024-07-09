@@ -47,7 +47,7 @@ fi
 # Set environment variable for browser
 export BROWSER=thorium-browser
 
-if ! is_running dwm_bar.sh; then
-	# Start dwm status bar script
-	~/git/dwm-bar/dwm_bar.sh &
-fi
+#if ! is_running dwm_bar.sh; then
+#	# Start dwm status bar script
+#	~/git/dwm-bar/dwm_bar.sh &
+#fi

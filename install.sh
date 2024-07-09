@@ -83,7 +83,7 @@ fi
 # Ensure Neovim is installed and set up NvChad
 if command_exists nvim; then
     nvim +MasonInstall +"Lazy install" +qall
-    echo "Neovim (NvChad) setup completed"
+    echo "Neovim setup completed"
 else
     echo "nvim is not installed. Please install Neovim to continue."
     exit 1
