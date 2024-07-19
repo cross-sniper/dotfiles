@@ -53,6 +53,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+Return exec xterm
 bindsym $mod+Control+Return exec alacritty
 
+bindsym $mod+Control+e exec emacsclient --eval "(emacs-everywhere)"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -210,5 +212,6 @@ exec --no-startup-id alacritty
 
 # emacs in background server mode
 exec --no-startup-id /usr/bin/emacs --daemon
+exec --no-startup-id pamac-daemon
 
 exec --no-startup-id export BROWSER=thorium-browser

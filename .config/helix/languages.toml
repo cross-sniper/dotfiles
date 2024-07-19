@@ -1,0 +1,14 @@
+[language-server.zls]
+# omit the following line if `zls` is in your PATH
+command = "/usr/bin/zls"
+# There are two ways to set config options:
+#   - edit your `zls.json` that applies to any editor that uses ZLS
+#   - set in-editor config options with the `config.<name>` fields below.
+#
+# Further information on ZLS config options:
+# https://github.com/zigtools/zls#configuration-options
+
+# Whether to enable build-on-save diagnostics
+# config.enable_build_on_save = true
+# omit the following line if `zig` is in your PATH
+config.zig_exe_path = "/usr/bin/zig"

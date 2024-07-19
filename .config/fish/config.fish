@@ -14,7 +14,6 @@ set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
 set -x TWEEGO_PATH "~/.storyformats"
 set -x RUSTC_WRAPPER "sccache"
-set -x NVIM_APPNAME "nvim-Lazyman"
 
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH
@@ -62,7 +61,7 @@ alias ..="cd .."
 alias edit="$EDITOR"
 alias gcg="git config --global"
 alias gas="ga .; gss"
-alias emacs="emacsclient"
+alias emacscli="emacsclient"
 alias ncm="ncmpcpp"
 alias tree="tree -C"
 
