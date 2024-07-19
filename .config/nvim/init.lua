@@ -23,6 +23,16 @@ fns.set("incsearch")           -- Show incremental search results
 fns.cmd("syntax on")           -- Enable syntax highlighting
 fns.cmd("filetype plugin indent on")  -- Enable file type detection, plugins, and indent
 
+
+-- common mappings
+fns.keymap("n","<leader>u","undo")
+fns.keymap("n","<leader>w","w")
+fns.keymap("n","<leader>q","q")
+fns.keymap("n","<leader>wq","q")
+
+
+
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -65,3 +75,7 @@ for _, file in ipairs(keybinds_files) do
 		require("keybinds."..fns.ignoreLetters(".lua",file))
 	end
 end
+
+-- Airline configuration
+global['airline#extensions#tabline#enabled'] = 1
+global['airline#extensions#tabline#formatter'] = 'default'
