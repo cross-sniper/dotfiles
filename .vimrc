@@ -36,6 +36,9 @@ call plug#end()
 
 " Set leader key
 let mapleader = ' '
+let maplocalleader = '\\'
+
+set tabstop=4
 
 " Map leader + f to FZF
 nmap <leader>ff :FZF<CR>

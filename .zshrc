@@ -11,7 +11,7 @@ export MYVIMRC="~/.vimrc"
 export MYNVIMRC="~/.config/nvim/init.lua"
 export TWEEGO_PATH="~/.storyformats"
 export RUSTC_WRAPPER="sccache"
-export NVIM_APPNAME="nvim-Lazyman"
+
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -110,7 +110,7 @@ alias ..="cd .."
 alias edit="$EDITOR"
 alias gcg="git config --global"
 alias gas="ga .; gss" # git add .; git status --short
-alias emacs="emacsclient"
+alias emacscli="emacsclient"
 alias ncm="ncmpcpp"
 alias tree="tree -C"
 
