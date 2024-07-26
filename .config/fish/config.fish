@@ -1,6 +1,6 @@
 # vars/exports
 set -x GIT_DISCOVERY_ACROSS_FILESYSTEM 1
-set -x EDITOR micro
+set -x EDITOR helix
 set -x BROWSER thorium-browser
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
 set -x FZF_ALT_C_OPTS "--preview 'eza -n --color=always {} | head -200'"
@@ -14,6 +14,7 @@ set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
 set -x TWEEGO_PATH "~/.storyformats"
 set -x RUSTC_WRAPPER "sccache"
+set -x MANPAGER bat
 
 # paths
 set -x PATH $HOME/.rbenv/shims $PATH

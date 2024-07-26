@@ -12,3 +12,7 @@ command = "/usr/bin/zls"
 # config.enable_build_on_save = true
 # omit the following line if `zig` is in your PATH
 config.zig_exe_path = "/usr/bin/zig"
+
+[language-server.python]
+command = "pyright"
+

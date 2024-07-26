@@ -7,7 +7,7 @@ fns.set("relativenumber")
 -- Tab settings
 fns.set("tabstop", 4)
 fns.set("softtabstop", 4)
-fns.set("shiftwidth", 2)
+fns.set("shiftwidth", 4)
 fns.set("expandtab")
 
 -- Additional settings
@@ -79,3 +79,6 @@ end
 -- Airline configuration
 global['airline#extensions#tabline#enabled'] = 1
 global['airline#extensions#tabline#formatter'] = 'default'
+
+require("autocmds")
+

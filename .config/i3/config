@@ -50,7 +50,7 @@ tiling_drag modifier titlebar
 
 # terminals
 bindsym $mod+Return exec kitty
-bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Shift+Return exec wezterm
 bindsym $mod+Control+Return exec alacritty
 
 bindsym $mod+Control+e exec emacsclient --eval "(emacs-everywhere)"

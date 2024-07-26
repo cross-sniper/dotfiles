@@ -1,6 +1,6 @@
 #vars/exports
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
-export EDITOR="micro"
+export EDITOR="helix"
 export BROWSER="thorium-browser"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza -n --color=always {} | head -200'"
@@ -11,7 +11,7 @@ export MYVIMRC="~/.vimrc"
 export MYNVIMRC="~/.config/nvim/init.lua"
 export TWEEGO_PATH="~/.storyformats"
 export RUSTC_WRAPPER="sccache"
-
+export MANPAGER=bat
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -103,6 +103,7 @@ whoowns() {
 # alias
 alias ls="exa -l"
 alias la="ls -a"
+alias rm="yes|original rm"
 
 alias zshconf="$EDITOR ~/.zshrc; echo \"reloaded zsh\";exec zsh"
 alias cat="bat"
