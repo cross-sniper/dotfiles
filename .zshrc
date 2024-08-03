@@ -12,6 +12,7 @@ export MYNVIMRC="~/.config/nvim/init.lua"
 export TWEEGO_PATH="~/.storyformats"
 export RUSTC_WRAPPER="sccache"
 export MANPAGER=bat
+export ODIN_ROOT="$HOME/Downloads/Odin-master/"
 
 # paths
 export PATH="$HOME/.rbenv/shims:$PATH"

@@ -9,5 +9,7 @@ return {
     lsp.lua_ls.setup({})
     lsp.typescript.setup({})
     lsp.nimlangserver.setup({})
+    lsp.ols.setup({})
   end
 }
+

@@ -206,6 +206,22 @@ battery_dwheel_command =
 ac_connected_cmd = 
 ac_disconnected_cmd = 
 
+#-------------------------------------
+# Button 1
+button = new
+button_icon = ~/.config/tint2/icons/search.png
+button_text = run
+button_tooltip = opens app laucner
+button_lclick_command = rofi -modi run,drun,window -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font "Noto Sans 10"
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font_color = #c0bfbc 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
 
 #-------------------------------------
 # Tooltip

@@ -32,6 +32,12 @@
             "keyColor": "yellow"
         },
         {
+	       	"type":"battery",
+	        "key": "├",
+            "keyColor": "yellow"
+
+        },
+        {
             "type": "packages",
             "key": "├󰏖",
             "keyColor": "yellow"

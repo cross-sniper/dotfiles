@@ -15,4 +15,3 @@ config.zig_exe_path = "/usr/bin/zig"
 
 [language-server.python]
 command = "pyright"
-

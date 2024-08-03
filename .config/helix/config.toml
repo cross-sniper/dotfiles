@@ -2,6 +2,7 @@ theme = "monokai"
 
 [editor]
 line-number = "relative"
+preview-completion-insert = false
 
 [editor.cursor-shape]
 insert = "bar"

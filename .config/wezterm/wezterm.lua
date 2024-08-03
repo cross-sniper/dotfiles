@@ -5,7 +5,7 @@ local conf = {
     {
       source = {
         File = {
-          path = "~/Pictures/my-hero-academia-wallpaper-11.png"
+          path = "~/Pictures/my-hero-academia-wallpaper-59.jpg"
         }
       },
       height = 'Cover',
@@ -36,6 +36,8 @@ local conf = {
     bottom = 0
   }
 }
+conf.font =
+  wez.font('JetBrainsMono Nerd Font', {bold=true})
 
 return conf
 
