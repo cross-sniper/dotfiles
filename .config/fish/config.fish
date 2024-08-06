@@ -1,6 +1,17 @@
 # vars/exports
 set -x GIT_DISCOVERY_ACROSS_FILESYSTEM 1
-set -x EDITOR helix
+# Check which helix command is available and set the EDITOR accordingly
+if test (command -v helix)
+    set -x EDITOR helix
+else if test (command -v hx)
+    set -x EDITOR hx
+else
+    echo "Helix editor is not installed."
+    echo "editor will be nano"
+    set -x EDITOR nano
+end
+
+
 set -x BROWSER thorium-browser
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
 set -x FZF_ALT_C_OPTS "--preview 'eza -n --color=always {} | head -200'"

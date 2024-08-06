@@ -1,8 +1,2 @@
 .config/micro/buffers
 .config/nushell/history.txt
-.emacs.d/elpa*
-.emacs.d/auto-save*
-.emacs.d/early-init.el
-.emacs.d/transient
-.emacs.d/init.el~
-.emacs.d/.*
