@@ -15,7 +15,7 @@
   "nerdtree": { "branch": "master", "commit": "9b465acb2745beb988eff3c1e4aa75f349738230" },
   "nui.nvim": { "branch": "main", "commit": "61574ce6e60c815b0a0c4b5655b8486ba58089a1" },
   "nvim-cmp": { "branch": "main", "commit": "ae644feb7b67bf1ce4260c231d1d4300b19c6f30" },
-  "nvim-lspconfig": { "branch": "master", "commit": "81a19de18990208b678be084597613e2dbe66912" },
+  "nvim-lspconfig": { "branch": "master", "commit": "6c505d4220b521f3b0e7b645f6ce45fa914d0eed" },
   "orgmode": { "branch": "master", "commit": "de02a0cfbe3484accb73025b6dd71b2cc4ae3eff" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
   "startup.nvim": { "branch": "master", "commit": "c6ba324f9eba0c23b675b53af431346aab893268" },
@@ -25,5 +25,5 @@
   "vim-floaterm": { "branch": "master", "commit": "4e28c8dd0271e10a5f55142fb6fe9b1599ee6160" },
   "which-key.nvim": { "branch": "main", "commit": "6c1584eb76b55629702716995cca4ae2798a9cca" },
   "zig.vim": { "branch": "master", "commit": "ad75bb5752f3556d8bde5b0e69cb69a98058030e" },
-  "zls": { "branch": "master", "commit": "f2f5339370cf166d75be9b220b9553396543c83c" }
+  "zls": { "branch": "master", "commit": "74b5a00f67ab4e5a848646411779221e6cc24b87" }
 }
