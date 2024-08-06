@@ -1,0 +1,1 @@
+/home/cross/.config/emacs/straight/repos/evil/doc/build/texinfo/evil.texi
