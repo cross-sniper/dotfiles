@@ -11,8 +11,15 @@ else
     set -x EDITOR nano
 end
 
+if test (command -v brave-browser)
+    set -x BROWSER brave-browser
+else if test (command -v brave)
+    set -x BROWSER brave
+else
+    echo "i have no clue what binary name of brave-browser you have"
+    echo "so you are on your own"
+end
 
-set -x BROWSER brave-browser
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
 set -x FZF_ALT_C_OPTS "--preview 'eza -n --color=always {} | head -200'"
 set -x LD_LIBRARY_PATH "$LD_LIBRARY_PATH:$HOME/.libs"
