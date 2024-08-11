@@ -1,23 +1,20 @@
 # vars/exports
 set -x GIT_DISCOVERY_ACROSS_FILESYSTEM 1
-# Check which helix command is available and set the EDITOR accordingly
-if test (command -v helix)
-    set -x EDITOR helix
-else if test (command -v hx)
-    set -x EDITOR hx
+# Check which neovim command is available and set the EDITOR accordingly
+if test (command -v nvim)
+    set -x EDITOR nvim
+else if test (command -v neovim)
+    set -x EDITOR neovim
 else
     echo "Helix editor is not installed."
     echo "editor will be nano"
     set -x EDITOR nano
 end
 
-if test (command -v brave-browser)
-    set -x BROWSER brave-browser
-else if test (command -v brave)
-    set -x BROWSER brave
+if test (command -v thorium-browser)
+    set -x BROWSER thorium-browser
 else
-    echo "i have no clue what binary name of brave-browser you have"
-    echo "so you are on your own"
+    echo "do you have thorium-browser installed?"
 end
 
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
