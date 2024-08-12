@@ -29,7 +29,9 @@ set -x MYVIMRC "~/.vimrc"
 set -x MYNVIMRC "~/.config/nvim/init.lua"
 set -x TWEEGO_PATH "~/.storyformats"
 set -x RUSTC_WRAPPER sccache
-set -x MANPAGER bat
+# set -x MANPAGER bat
+set -x MANPAGER "nvim +Man!"
+
 set -x ODIN_ROOT "$HOME/Downloads/Odin-master/"
 
 # paths
