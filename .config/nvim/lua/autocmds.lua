@@ -5,8 +5,10 @@ end
 vim.api.nvim_create_autocmd("VimEnter", {
     group = augroup("autoupdate"),
     callback = function()
-        if require("lazy.status").has_updates then
-            require("lazy").update({ show = false, })
+        if require("lazy.status").has_updates == true then
+            --require("lazy").update({ show = true})
+            vim.cmd[[Lazy update]]
         end
     end,
 })
+
