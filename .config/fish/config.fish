@@ -71,6 +71,15 @@ function whoowns
     stat -c '%U' $argv[1]
 end
 
+function findEdit
+    if test (count $argv) -eq 0
+        echo "running fzf on current folder"
+        edit $(fzf)
+    else
+        edit $(fzf $argv[1])
+    end
+end
+
 # aliases
 alias ls="exa -l"
 alias la="ls -a"
