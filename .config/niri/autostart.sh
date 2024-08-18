@@ -1,12 +1,5 @@
-#!/usr/bin/sh
-# autostart apps for niri wm, a wayland window manager
-set -e
+#!/usr/bin/env sh
+foot &
+#nitrogen --restore &
+feh --bg-scale ~/dotfiles/background.jpg&
 waybar &
-blueman-applet &
-nm-applet &
-# nitrogen --restore
-# picom
-# dunst
-mako &
-alacritty &
-swaybg -i ~/Pictures/uzi.png &

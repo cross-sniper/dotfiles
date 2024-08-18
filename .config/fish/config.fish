@@ -11,10 +11,16 @@ else
     set -x EDITOR nano
 end
 
-if test (command -v thorium-browser)
-    set -x BROWSER thorium-browser
+#if test (command -v thorium-browser)
+#    set -x BROWSER thorium-browser
+#else
+#    echo "do you have thorium-browser installed?"
+#end
+
+if test (command -v brave)
+    set -x BROWSER brave
 else
-    echo "do you have thorium-browser installed?"
+    echo "do you have brave installed?"
 end
 
 set -x FZF_CTRL_T_OPTS "--preview 'bat -n --color=always --line-range :500 {}'"
@@ -40,6 +46,7 @@ set -x PATH $PATH $HOME/bin $HOME/.config/emacs/bin $HOME/.local/share/gem/ruby/
 set -x PATH /opt/brew/opt/pod2man/bin $PATH
 set -x PATH /opt/brew/bin $PATH
 set -x PATH $PATH ~/.local/bin/
+set -x PATH $PATH /opt/android-sdk/platform-tools/
 
 # functions
 function kitty-reload
@@ -80,6 +87,10 @@ function findEdit
     end
 end
 
+function initD
+    source ~/dlang/dmd-2.109.1/activate.fish
+end
+
 # aliases
 alias ls="exa -l"
 alias la="ls -a"
@@ -104,7 +115,6 @@ alias tree="tree -C"
 # dynamic initialization
 fzf --fish | source
 zoxide init --cmd cd fish | source
-# dynamic initialization
 
 
 # bun

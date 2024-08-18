@@ -22,18 +22,6 @@ else
     echo "tmux plugin manager already installed"
 fi
 
-# Check for alacritty-themes
-if [ ! -d "/usr/lib/node_modules/alacritty-themes/" ]; then
-    echo "You might need to install \"alacritty-themes\""
-    echo "Opening https://github.com/rajasegar/alacritty-themes"
-    if command_exists xdg-open; then
-        xdg-open "https://github.com/rajasegar/alacritty-themes"
-    elif command_exists open; then
-        open "https://github.com/rajasegar/alacritty-themes"
-    else
-        echo "Please open the URL manually: https://github.com/rajasegar/alacritty-themes"
-    fi
-fi
 
 # Required i3 configuration files
 echo "i3's config needs:"

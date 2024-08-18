@@ -2,4 +2,4 @@ install.sh
 .git
 .gitignore
 .xorg-touchpad-config.conf
-.config/nvim
+background.jpg

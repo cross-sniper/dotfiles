@@ -50,13 +50,20 @@ tiling_drag modifier titlebar
 
 # terminals
 # Launch Kitty if available, otherwise send a notification
-bindsym $mod+Return exec --no-startup-id sh -c 'command -v kitty && kitty || notify-send "Kitty not found!"'
+# bindsym $mod+Return exec --no-startup-id sh -c 'command -v kitty && kitty || notify-send "Kitty not found!"'
+
+# Launch st if available, otherwise send a notification
+bindsym $mod+Return exec --no-startup-id sh -c 'command -v st && st || notify-send "st not found!"'
 
 # Launch WezTerm if available, otherwise send a notification
 bindsym $mod+Shift+Return exec --no-startup-id sh -c 'command -v wezterm && wezterm || notify-send "WezTerm not found!"'
 
 # Launch Alacritty if available, otherwise send a notification
 bindsym $mod+Control+Return exec --no-startup-id sh -c 'command -v alacritty && alacritty || notify-send "Alacritty not found!"'
+
+# Launch foot(terminal) if available, otherwise send a notification
+# WARNING: this is wayland only
+# bindsym $mod+Control+Return exec --no-startup-id sh -c 'command -v foot && foot || notify-send "foot not found!"'
 
 
 bindsym $mod+Control+e exec emacsclient --eval "(emacs-everywhere)"
@@ -193,8 +200,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # dock
-#exec --no-startup-id tint2
-exec --no-startup-id xfce4-panel
+exec --no-startup-id tint2
+#exec --no-startup-id xfce4-panel
 
 # bluetooth dock applet
 exec --no-startup-id blueman-applet
@@ -212,7 +219,7 @@ exec --no-startup-id picom
 exec --no-startup-id dunst
 
 # music player daemon
-exec --no-startup-id mpd
+#exec --no-startup-id mpd
 
 # the terminal
 exec --no-startup-id alacritty
