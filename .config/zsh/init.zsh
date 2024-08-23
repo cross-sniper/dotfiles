@@ -56,6 +56,7 @@ update_prompt() {
 # Call update_prompt before every command
 precmd_functions+=(update_prompt)
 
+
 # Initialize the prompt
 update_prompt
 

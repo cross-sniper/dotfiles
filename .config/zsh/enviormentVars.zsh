@@ -13,6 +13,7 @@ export PATH="$HOME/bin:$HOME/.config/emacs/bin:$HOME/.local/share/gem/ruby/3.0.0
 export PATH="/opt/brew/opt/pod2man/bin:$PATH"
 export PATH="/opt/brew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/scripts:$PATH"
 export PATH="/opt/android-sdk/platform-tools:$PATH"
 
 # Bun
