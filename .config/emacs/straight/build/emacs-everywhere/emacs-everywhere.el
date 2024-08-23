@@ -1,1 +1,0 @@
-/home/cross/.config/emacs/straight/repos/emacs-everywhere/emacs-everywhere.el

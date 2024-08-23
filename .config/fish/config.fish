@@ -47,6 +47,7 @@ set -x PATH /opt/brew/opt/pod2man/bin $PATH
 set -x PATH /opt/brew/bin $PATH
 set -x PATH $PATH ~/.local/bin/
 set -x PATH $PATH /opt/android-sdk/platform-tools/
+set -x PATH $HOME/scripts $PATH
 
 # functions
 function kitty-reload

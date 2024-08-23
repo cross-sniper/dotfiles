@@ -10,6 +10,13 @@ echo "Script PID = $pid"
 errorHandler(){
     echo "An error occurred while building the project at line $LINENO"
     echo "Error: $1"
+
+    # check for cleanUp function
+    if declare -f cleanUp > /dev/null; then
+        cleanUp
+    else
+        echo "No cleanUp function defined."
+    fi
 }
 
 raise(){
